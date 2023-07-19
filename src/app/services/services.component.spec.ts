@@ -16,6 +16,21 @@ describe('ServicesComponent', () => {
     component = fixture.componentInstance;
   });
 
+
+  it('nav element', ()=> {
+          const headerElement: HTMLElement = fixture.nativeElement;
+          const nav = headerElement.querySelector('nav')!;
+          expect(nav).toBeTruthy();
+        });
+
+  it('No p element', ()=> {
+          const headerElement: HTMLElement = fixture.nativeElement;
+          const nav = headerElement.querySelector('p')!;
+          expect(nav).toBeFalsy();
+      });
+
+
+
   it('should render the table with the correct data', async() => {
 
       

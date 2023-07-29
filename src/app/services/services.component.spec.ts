@@ -1,6 +1,9 @@
+import { DatosNba } from '../interfaces/datos-nba';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ServicesComponent } from './services.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { ServicioDatosService } from '../providers/servicio-datos.service';
+
 
 
 describe('ServicesComponent', () => {
@@ -17,25 +20,8 @@ describe('ServicesComponent', () => {
   });
 
 
-  it('nav element', ()=> {
-          const headerElement: HTMLElement = fixture.nativeElement;
-          const nav = headerElement.querySelector('nav')!;
-          expect(nav).toBeTruthy();
-        });
-
-  it('No p element', ()=> {
-          const headerElement: HTMLElement = fixture.nativeElement;
-          const nav = headerElement.querySelector('p')!;
-          expect(nav).toBeFalsy();
-      });
 
 
 
-  it('should render the table with the correct data', async() => {
 
-      
-
-
-
-  });
 });

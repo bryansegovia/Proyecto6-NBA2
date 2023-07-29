@@ -1,9 +1,35 @@
- <!-- Tabla con datos -->
+ <!-- Tabla con datos / cartas -->
 
-<table>
+
+ <div class="col mb-5">
+    <div class="card h-100">
+        <!-- Player image-->
+        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+        <!-- Player details-->
+        <div class="card-body p-4">
+            <div class="text-center">
+                <!-- Player name-->
+                <h5 class="fw-bolder">
+                     {{  data[receivedParam].Player }}  
+                </h5>
+                <!-- Product price-->
+                TEAM:  {{ data[receivedParam].Team }}
+                
+                
+            </div>
+        </div>
+        <!-- Stats-->
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <app-portfolio [receivedParam]=receivedParam></app-portfolio>
+        </div>
+    </div>
+</div>
+
+<!--
+<table id="playersT">
     <tbody>
         <tr *ngFor="let datum of data">
             <td> {{  datum.Player  }}  </td><td> {{  datum.Team  }} </td>
         </tr>
     </tbody>
-</table>
+</table>-->

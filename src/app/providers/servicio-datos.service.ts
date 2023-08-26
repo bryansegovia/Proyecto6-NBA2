@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 })
 export class ServicioDatosService {
 
-  private URL: string = 'https://proyecto6-nbastats-13bc6-default-rtdb.firebaseio.com/collection.json';
+  private URL: string = 'https://z8rfkiohbl.execute-api.us-east-1.amazonaws.com/nba-api/players';
 
   
 

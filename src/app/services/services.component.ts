@@ -25,8 +25,8 @@ export class ServicesComponent {
 
 
   ngOnInit() {
-    this.dataProvider.getResponse().subscribe((response) => { 
-      this.data = (response as DatosNba[]).slice(0,8)
+    this.dataProvider.getResponse().subscribe((response:any) => { 
+      this.data = (response.data as DatosNba[]).slice(0,8)
       
     })
 
